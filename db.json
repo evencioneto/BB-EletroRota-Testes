@@ -41,12 +41,12 @@
       "id": "JuPJH8W3d5A"
     },
     {
-      "nome": "Edson Aguiar",
+      "nome": "edson",
       "email": "edson@edson.com",
       "senha": "12345",
       "veiculo": {
-        "marca": "byd",
-        "potencia": "309",
+        "marca": "Corola",
+        "potencia": "300",
         "bateriaAtual": "92"
       },
       "id": "OwBXSvYnaac"
