@@ -1,0 +1,157 @@
+body{
+    z-index: 1000;
+   
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url("/src/assets/imagemBackgroundDesfocada.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* filter: blur(5px); */
+    /* Opcional: melhora a performance em navegadores */
+    /* -webkit-filter: blur(2px); */
+    
+    /* MÁGICA AQUI: Desfoca tudo atrás deste elemento */
+    backdrop-filter: blur(8px);    
+    -webkit-backdrop-filter: blur(8px); /* Compatibilidade Safari */
+    
+    /* Centralizar a modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Garante que fique por cima */
+   
+}
+
+/* Estilo do conteúdo da sobreposição */
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1002; /* Fica acima do overlay */
+     border-color: #1557b0;
+    border: 2px;
+}
+
+
+
+
+/* ============================================================================== */
+
+
+
+
+
+
+
+/* 
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 { color: #1a73e8; margin-bottom: 8px; }
+p { color: #5f6368; margin-bottom: 24px; font-size: 14px; }
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label { display: block; margin-bottom: 5px; font-size: 14px; color: #3c4043; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+    color-scheme: light; 
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover { background-color: #1557b0; }
+
+.message { margin-top: 15px; font-size: 14px; min-height: 20px; }
+.error { color: #d93025; }
+.success { color: #188038; }
+
+
+.login-card{
+
+    position: relative;
+}
+
+
+.bt-irParaHome{
+    position: absolute;
+    margin-top: '10px';    
+    position : 'absolute';
+    background:' #ffdf00 ';
+    color: 'blue';
+    border: '2px solid #3814da';
+    
+    
+    position: absolute; /* Posiciona em relação ao .box */
+    top: 10px;           /* Distância do topo */
+    right: 10px;         /* Distância da direita */
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .bt-irParaHome:hover {
+    background-color: #cc0000;
+}
